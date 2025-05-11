@@ -22,7 +22,7 @@ body {
   }
   
   .btn {
-    background-color: #e63946;
+    background-color: #eed021;
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
@@ -80,7 +80,7 @@ body {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.2em;
-    color: #e63946;
+    color: #eed021;
   }
   
   .service p {
@@ -114,7 +114,7 @@ body {
   
   .arrow.service-left:hover,
   .arrow.service-right:hover {
-    background-color: #e63946;
+    background-color: #eed021;
   }
 
   /* fin section service */
@@ -137,7 +137,7 @@ body {
   
   .reservation {
     padding: 50px 20px;
-    background-color: #e63946;
+    background-color: #aa962a;
     color: #fff;
     text-align: center;
   }
@@ -173,10 +173,10 @@ aside iframe {
   height: 100%;
   width: 250px;
   position: fixed;
-  z-index: 1;
+  z-index: 9999; /* ← corrigé ici */
   top: 0;
   left: -250px;
-  background-color: #9a8e8e;
+  background-color: #5b5757;
   padding-top: 60px;
   transition: left 0.5s ease;
 }
@@ -192,13 +192,13 @@ aside iframe {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #000000;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #111;
+  color: #e4c40e;
 }
 
 /* Active class */
@@ -295,3 +295,74 @@ aside iframe {
 .arrow.right {
   right: 10px;
 }
+/* banniere pour la page contact */
+
+.hero {
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../Image/Banniere\ leuridan.jpeg"); /* ton image ici */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5); /* rend l’image sombre */
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+/* fin banniere pour la page contact */
+
+/* systeme de carte page contact */
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.contact-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #eed021;
+}
+
+.contact-card a {
+  color: #f1faee;
+  text-decoration: none;
+  font-size: 1em;
+  word-break: break-word;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+/* fin du syteme de carte page contact */
