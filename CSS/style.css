@@ -351,7 +351,7 @@ aside iframe {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 1.2em;
-  color: #eed021;
+  color: #e4c40e;
 }
 
 .contact-card a {
@@ -366,3 +366,19 @@ aside iframe {
   opacity: 1;
 }
 /* fin du syteme de carte page contact */
+/* calendly block */
+.calendly-block {
+  margin-top: 40px;
+  background-color: #1c1c1c;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.calendly-block h3 {
+  color: #e4c40e;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* calendly block fin */
