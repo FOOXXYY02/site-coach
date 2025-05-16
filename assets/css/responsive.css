@@ -1,0 +1,62 @@
+/* Responsive CSS commun pour toutes les pages */
+
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .temoignages-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .temoignages-intro {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .temoignages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9em;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  footer.contact {
+    font-size: 0.9em;
+  }
+}
