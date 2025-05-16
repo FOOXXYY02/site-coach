@@ -2,29 +2,55 @@ body {
   background-color: #1e1e1e;
   color: #fff;
   font-family: "Arial", sans-serif;
+  /* ✅ on supprime l'image de fond ici */
 }
 
+/* ✅ Image uniquement pour la section hero */
 .hero {
-  background-color: #c2a421;
+  position: relative;
   padding: 60px 20px;
   text-align: center;
+  color: white;
+  overflow: hidden;
+
+  background-image: url("../images/banniere.jpeg"); /* chemin à adapter */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* filtre foncé pour lisibilité */
+  z-index: 0;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
   font-size: 3em;
   margin-bottom: 10px;
-  color: white;
 }
 
 .hero p {
   font-size: 1.2em;
-  color: #ffffff;
+  margin: 0;
 }
 
+/* Section tarifs */
 .pricing-section {
   padding: 40px 20px;
   display: flex;
   justify-content: center;
+  background-color: #1e1e1e; /* ✅ fond fixe et neutre sous la grille */
 }
 
 .pricing-grid {
@@ -65,9 +91,10 @@ body {
   border: 2px solid #ffd700;
 }
 
+/* Footer */
 footer.contact {
   background-color: #111;
-  padding: 20px;
+  padding: 2rem;
   text-align: center;
   color: #888;
 }
