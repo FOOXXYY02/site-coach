@@ -11,8 +11,7 @@ body {
   padding: 60px 20px;
   text-align: center;
   color: white;
-  overflow: hidden;
-
+  overflow-x: auto;
   background-image: url("../images/banniere.jpeg"); /* chemin à adapter */
   background-size: cover;
   background-position: center;

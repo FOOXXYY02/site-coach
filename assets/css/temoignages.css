@@ -93,11 +93,12 @@ body {
 .contact {
   background-color: #000;
   padding: 20px;
-  position: absolute;
-  bottom: 0;
+  position: relative; /* ou même aucune position */
   width: 100%;
   text-align: center;
+  margin-top: 40px; /* pour aérer un peu */
 }
+
 
 /* Menu burger */
 .sidenav {
